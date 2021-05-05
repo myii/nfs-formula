@@ -1,0 +1,105 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/nfs-formula/compare/v0.11.1...v0.12.0++[0.12.0^] (2021-04-03)
+
+=== Code Refactoring
+
+* *service:* split out nfs service handling into dedicated state
+(https://github.com/saltstack-formulas/nfs-formula/commit/ad8d4b89dc1f20d8bb02abcfbd2e98e2d0395317[ad8d4b8^])
+
+=== Continuous Integration
+
+* *commitlint:* ensure `upstream/master` uses main repo URL [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/3d81feaab31734c149c50d59b2a057e62e8463af[3d81fea^])
+* *gemfile+lock:* use `ssf` customised `kitchen-docker` repo [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/be724aed004193eb45a0b94c7a1274cb1a6aa227[be724ae^])
+* *gitlab-ci:* add `rubocop` linter (with `allow_failure`) [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/e0274daa9acc2b069ceb9f3a77c2a630ed4cfa34[e0274da^])
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/nfs-formula/commit/4405b2151768067098c1431007416db65daf36f7[4405b21^])
+* *kitchen+ci:* use latest pre-salted images (after CVE) [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/8ef34725eb0cffae615d47346238c624ee104880[8ef3472^])
+* *kitchen+gitlab-ci:* use latest pre-salted images [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/ef34ebba22b3f5255dec3c1faeb3e877982b87b6[ef34ebb^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/b4b0896979895c82be592ae3f0232647d8580521[b4b0896^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/def21c3ba004e806e7ac4aa608ab05efdeae06fe[def21c3^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/6bea9eaedde9b1b29f56f15ec080649a405691a1[6bea9ea^])
+* *pre-commit:* update hook for `rubocop` [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/c298c9a7cecfb15213441105d9f83cd47e7cb621[c298c9a^])
+
+=== Features
+
+* *oscodenamemap:* add support for openSUSE Tumbleweed
+(https://github.com/saltstack-formulas/nfs-formula/commit/5c30f49cef7c20a76201505550ad9976822fa61b[5c30f49^])
+* *osfamilymap:* add support for Gentoo
+(https://github.com/saltstack-formulas/nfs-formula/commit/aae6ce6414fc077c65b96c8f55e519863e8a5ed7[aae6ce6^])
+* *service:* allow disabling of nfs services
+(https://github.com/saltstack-formulas/nfs-formula/commit/2bfffc06a919546ae5775010ba4e33a5e200938b[2bfffc0^])
+
+=== Tests
+
+* standardise use of `share` suite & `_mapdata` state [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/b3d113a49eef5b459aa83a12881a888f83a0dc2c[b3d113a^])
+
+== link:++https://github.com/saltstack-formulas/nfs-formula/compare/v0.11.0...v0.11.1++[0.11.1^] (2020-07-06)
+
+=== Bug Fixes
+
+* *null:* replace `None` with null in yaml files
+(https://github.com/saltstack-formulas/nfs-formula/commit/88a3c544cca607c22b661c4d59df3012cc21208d[88a3c54^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/c8c240f300b5e59913bfd0be039a59fe460ad2b3[c8c240f^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/5f3dc366f38cd0759eff9f2b4ff1e5546dd19d65[5f3dc36^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/a0f372258bdf9c1e55ef0d24442d9088ca576999[a0f3722^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/c8ae973a61a933453e0b769233cef3d2355b1cc0[c8ae973^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/26cf881085950553d6ccb28a19100e22ac438cb8[26cf881^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/c1d4ce0d7b4da976b241506df29b6f992afa7cf9[c1d4ce0^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/c15158b1ec0aebbd249c5cddfa7e1ee2d0e88679[c15158b^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/5efc35189d6da8440e4822cf3ea7af8e91b463e3[5efc351^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/a20ce32841077e418b0e15155c081b4014e9a9a1[a20ce32^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/26bc2b410cbc5b9bd3b48e771dc4149e481f127f[26bc2b4^])
+* workaround issues with newly introduced `amazonlinux-1` [skip ci]
+(https://github.com/saltstack-formulas/nfs-formula/commit/da5453c87bd2d98a2d191f11ec4f9906d6cce2bf[da5453c^])
+
+== link:++https://github.com/saltstack-formulas/nfs-formula/compare/v0.10.0...v0.11.0++[0.11.0^] (2019-11-20)
+
+=== Bug Fixes
+
+* *map.jinja:* add missing reference to `osfinger` grain
+(https://github.com/saltstack-formulas/nfs-formula/commit/d56f55e6cafb88f5f6f5012eda1e50a304684362[d56f55e^])
+* *osfingermap:* update `service_name` for `CentOS-6`
+(https://github.com/saltstack-formulas/nfs-formula/commit/780c0622284c98464a65a7f7cba3660b5ef94cbd[780c062^])
+* *osmap:* update `service_name` for current versions of Fedora
+(https://github.com/saltstack-formulas/nfs-formula/commit/27317085f7f5435fd11cbe8351802ce66bb2df99[2731708^])
+
+=== Continuous Integration
+
+* *travis:* finalise enabled instances
+(https://github.com/saltstack-formulas/nfs-formula/commit/1255431d0d2a2ede0a7696a13710fb67df52c680[1255431^])
+
+=== Features
+
+* implementing semantic release
+(https://github.com/saltstack-formulas/nfs-formula/commit/ad826bc23ef2b576ba298ea81007357cfd0a5d63[ad826bc^])
+
+=== Styles
+
+* fix linters errors
+(https://github.com/saltstack-formulas/nfs-formula/commit/18acd667c0299a7a9438d57f5f7d120df2841125[18acd66^])
